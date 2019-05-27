@@ -86,7 +86,6 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 define('ADMIN_LAYOUT', 'admin/app');
 define('ADMIN_LAYOUT_LOGIN', 'login/app');
-define('FRONT_LAYOUT', 'front/layout/app');
 
 /* Email Setting constatnts */
 define("SMTP_HOST", "localhost");
@@ -100,7 +99,7 @@ define("IMAGES", 'http://' . $_SERVER['HTTP_HOST'] . '/ferryservice/public/asset
 }
 
 define('DATE_TIME',date('Y-m-d H:i:s'));
-define('PROJECT_NAME', 'Ferryservice');
+define('PROJECT_NAME', 'Blood-donate');
 define('REPLAY_EMAIL', '');
 
 
@@ -108,25 +107,19 @@ define('TICKET_AMOUNT',520);
 
 //Table Name
 define('TBL_USERS','users');
-define('TBL_PASSANGER_DETAILS','passanger_details');
-define('TBL_ROUTE_LIST','route_list');
-define('TBL_STATION_LIST','station_list');
-define('TBL_TICKET_DETAILS','ticket_details');
-define('TBL_TRIP_TIME','trip_time');
 
 
-//Model Constant
+//Model Constatant
 define('LOGIN_MODEL','admin/Login_model');
-define('BUSROUTE_MODEL','admin/Busroute_model');
-define('STATION_MODEL','admin/Station_model');
-define('BOOKING_MODEL','admin/Booking_model');
 
-//View Constatnt
+//View Constatant
 define('ADMINLOGINLAYOUT','admin/layout/adminlogin');
 define('ADMINLAYOUT','admin/layout/adminlayout');
 
-define('AGENT_LAYOUT','agent/layout/agent_layout');
 
 define('PAGES','admin/pages/');
-define('AGENT_PAGES','agent/');
+
+// Front Constatant
+define('FRONT_LAYOUT','front/layout/pagelayout');
+define('FRONT_PAGES','front/pages/');
 

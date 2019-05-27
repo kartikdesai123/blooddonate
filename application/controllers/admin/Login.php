@@ -8,8 +8,8 @@ class Login extends CI_Controller {
     }
 
     public function index() {
-            $data['title']='Roroferry - Login';
-            $data['meta']='Roroferry - Login';
+            $data['title']='Blooddonate - Login';
+            $data['meta']='Blooddonate - Login';
             $data['page'] = PAGES.'loginpage';   
             $data['home'] = "active";  
             if ($this->input->post()) {
@@ -18,13 +18,7 @@ class Login extends CI_Controller {
                 if($result == TRUE){
                     $json_response['status'] = 'success';
                     $json_response['message'] = 'Well done Login Successfully Done';
-                    
-                    if($this->session->userdata['roroferry_admin']['userType'] == "admin"){
-                      $json_response['redirect'] = base_url().'dashboard';  
-                    }else{
-                      $json_response['redirect'] = base_url().'agent-dashboard';  
-                    }
-                    
+                    $json_response['redirect'] = base_url().'dashboard';  
                 }else{
                     $json_response['status'] = 'error';
                     $json_response['message'] = 'Email address or password does not match';
