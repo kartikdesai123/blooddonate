@@ -16,7 +16,7 @@
        }
     ?>
 </head>
-<body class="gray-bg" background="<?= base_url(); ?>public/asset/admin/images/bg.jpg">
+<body class="gray-bg" >
     <?php $this->load->view($page);?>
      <script src="<?php echo base_url(); ?>public/asset/admin/js/app.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>public/asset/admin/js/plugins/validate/jquery.validate.min.js" type="text/javascript"></script>
