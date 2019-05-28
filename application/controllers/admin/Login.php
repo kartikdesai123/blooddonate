@@ -8,8 +8,8 @@ class Login extends CI_Controller {
     }
 
     public function index() {
-            $data['title']='Blooddonate - Login';
-            $data['meta']='Blooddonate - Login';
+            $data['title']='Blood Donate - Login';
+            $data['meta']='Blood Donate - Login';
             $data['page'] = PAGES.'loginpage';   
             $data['home'] = "active";  
             if ($this->input->post()) {
@@ -27,7 +27,7 @@ class Login extends CI_Controller {
                 exit();
             }
             $data['js'] = array(
-                'login.js',
+                'admin/login.js',
                 'ajaxfileupload.js',
                 'jquery.form.min.js'
             );

@@ -1,6 +1,6 @@
 <div class="footer">
     <div>
-        <strong>Copyright</strong> Roroferry Team. &copy; <?= date("Y") ?>
+        <strong>Copyright</strong> Blood Donate Team. &copy; <?= date("Y") ?>
     </div>
 </div>
 

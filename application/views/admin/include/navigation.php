@@ -4,18 +4,24 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element"> 
                         <span>
-                            <img style="width:80px;height:80px " alt="image" class="img-circle" src="<?= base_url();?>public/images/profileImages/admin.jpg"/>
+                            <?php if($this->session->userdata['blooddonate_admin']['image'] == '' || $this->session->userdata['blooddonate_admin']['image'] == NULL){
+                                print_r('<img style="width:80px;height:80px " alt="image" class="img-circle" src="'.base_url().'public/images/profileImages/admin.png"/>');
+                            }else{
+                                print_r('<img style="width:80px;height:80px " alt="image" class="img-circle" src="'.base_url().'public/images/profileImages/'.$this->session->userdata['blooddonate_admin']['image'].'"/>');
+                            }?>
+                           
+                            
                         </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear">
                                 <span class="block m-t-xs">
-                                    <strong class="font-bold">Admin Admin</strong>
+                                    <strong class="font-bold"><?= $this->session->userdata['blooddonate_admin']['firstName'] ?>  <?= $this->session->userdata['blooddonate_admin']['lastName'] ?></strong>
                                 </span>
                             </span>
                         </a>
                     </div>
                     <div class="logo-element">
-                        RF
+                        BD
                     </div>
                 </li>
 
@@ -26,27 +32,13 @@
                     </a>
                 </li>
                 
-                <li class="<?php if(isset($busroute)){print_r($busroute);} ?>">
-                    <a href="<?= base_url().'bus-route';?>">
-                        <i class="fa fa-bus"></i> 
-                        <span class="nav-label">Bus Route</span>
+                <li class="<?php if(isset($children)){print_r($children);} ?>">
+                    <a href="<?= base_url().'children';?>">
+                        <i class="fa fa-users"></i> 
+                        <span class="nav-label">Children</span>
                     </a>
                 </li>
                 
-                <li class="<?php if(isset($station)){print_r($station);} ?>">
-                    <a href="<?= base_url().'station';?>">
-                         <i class="fa fa-stop-circle-o"></i> 
-                        <span class="nav-label">Station</span>
-                    </a>
-                </li>
-                
-               
-                <li class="<?php if(isset($booking)){print_r($booking);} ?>">
-                    <a href="<?= base_url().'booking';?>">
-                       <i class="fa fa-th"></i> 
-                        <span class="nav-label">Booking List</span>
-                    </a>
-                </li>
             
             </ul>
 

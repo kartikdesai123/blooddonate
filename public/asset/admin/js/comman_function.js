@@ -911,8 +911,8 @@ $(function()
     $( "#date" ).datepicker({ format: 'dd.MM.yyyy',autoclose: true });
     $('#date').datepicker('setDate', new Date());
     
-    $( "#startdate" ).datepicker({ format: 'dd.MM.yyyy',autoclose: true });
-    $('#startdate').datepicker('setDate', new Date());
+    $( "#startdate" ).datepicker({ format: 'dd-mm-yyyy',autoclose: true });
+//    $('#startdate').datepicker('setDate', new Date());
     
     $( "#enddate" ).datepicker({ format: 'dd.MM.yyyy',autoclose: true });
     $('#enddate').datepicker('setDate', new Date());

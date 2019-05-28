@@ -1,9 +1,10 @@
     <div class="middle-box text-center loginscreen animated fadeInDown" style="padding-top:180px ">
         <div>
             <div>
-                <div class="logo d-none d-lg-block">
+                <div >
                     <a href="<?php echo base_url().'admin';?>">
-                         <img style="width: 150px;height: 150px;" src="<?= base_url().'public/asset/admin/images/logo.png' ?>" alt="Logo" />
+
+                        <h2><b>Blood Donate</b></h2>
                      </a>
                 </div>
             </div>

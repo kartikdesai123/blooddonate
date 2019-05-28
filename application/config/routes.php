@@ -50,25 +50,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = 'homepage/index';
-//$route['default_controller'] = 'account/zz';
-$route['register'] = 'account/register';
-$route['contact'] = 'front/contact';
-$route['payment-inquiry'] = 'homepage/paymentInquiry';
-
-$route['payment-refund'] = 'homepage/paymentRefund';
-/* START BY JIGNESH */
-$route['login'] = 'account/login';
-$route['home'] = 'account/home';
-
-$route['dashboard'] = 'account/dashboard';
-
-
+$route['default_controller'] = 'front/Homepage/index';
 //*******************************Admin Route *****************************************//
 $route['admin'] = 'admin/login';
 
 
-$route['dashboard'] = 'admin/admin/dashborad';
+$route['dashboard'] = 'admin/Dashborad';
+
+$route['children'] = 'admin/Children';
+$route['children-add'] = 'admin/Children/childrenAdd';
+$route['children-ajaxcall'] = 'admin/Children/ajaxcall';
+$route['edit-children/(:any)'] = 'admin/Children/childrenEdit/$1';
+$route['deleteChild'] = 'admin/Children/childrenDelete';
 
 
 

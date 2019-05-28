@@ -107,10 +107,12 @@ define('TICKET_AMOUNT',520);
 
 //Table Name
 define('TBL_USERS','users');
+define('TBL_CHILDREN','children');
 
 
 //Model Constatant
 define('LOGIN_MODEL','admin/Login_model');
+define('CHILDREN_MODEL','admin/Children_model');
 
 //View Constatant
 define('ADMINLOGINLAYOUT','admin/layout/adminlogin');
@@ -123,3 +125,5 @@ define('PAGES','admin/pages/');
 define('FRONT_LAYOUT','front/layout/pagelayout');
 define('FRONT_PAGES','front/pages/');
 
+// Extra Constant
+define ("BLOOD_GROUP", serialize (array ("A+","B+","O+", "AB+","A-", "B-","O-","AB-"))); 
